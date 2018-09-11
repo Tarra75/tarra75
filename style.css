@@ -1,0 +1,129 @@
+.heading1 { color: white;
+font-weight: 200px;
+font-size: 50px;
+margin: 20px;
+padding: 100px;
+border: 5px solid orange; 
+text-align: center;
+font-family: 'Roboto Slab', serif; 
+}
+
+
+.background {
+    background-color: rgb(109, 202, 187);
+}   
+.navbar {
+    display: block;
+    float: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:orange;
+}
+.image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 600px;
+    max-width: 300px;
+    padding: 20px;
+}
+.image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 600px;
+    max-width: 300px;
+    padding: 20px;
+}
+.image3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 600px;
+    max-width: 300px;
+    padding: 20px;
+}
+.image4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 700px;
+    max-width: 400px;
+    padding: 20px;
+}
+.image5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 700px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.bio {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.biolist {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+   
+}
+
+.biolist li{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    list-style-position: inside;
+}
+
+.email {
+    font-family: 'Roboto Slab', serif;
+    align-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    float: center;
+    text-align: center;
+
+}
+/* single direction drop shadow */
+ hr {
+     height: 12px;
+     border: 0;
+     box-shadow: inset 0 12px 12px -12px rgb(255, 178, 78);
+ }
+
+
