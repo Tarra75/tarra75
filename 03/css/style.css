@@ -1,0 +1,36 @@
+.container {
+    width: 800px;
+    height: 800px;
+    /*background-color: black;*/
+    display: flex;
+    flex-flow: wrap;
+    border: 5px solid black;
+    margin: 50px;
+}
+.boxtop {
+    /*background-color: orange;*/
+    height: 30%;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+
+.boxbottom {
+    height: 560px;
+    width: 800px;
+    display: flex; 
+}
+
+.boxleft {
+    /*background-color: green;*/
+    height: 100%;
+    width: 50%;
+    border-right: 5px solid black;
+}
+
+.boxright {
+    /*background-color: red;*/
+    height: 100%;
+    width: 50%;
+}
+
+
