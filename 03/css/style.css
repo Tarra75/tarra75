@@ -1,19 +1,49 @@
+html,body {
+    background: white;
+    height: 100%;
+}
+
+
 .container {
     width: 800px;
     height: 800px;
     /*background-color: black;*/
     display: flex;
     flex-flow: wrap;
-    border: 5px solid black;
-    margin: 50px;
+    border: 15px solid black;
+    margin: 200px;
 }
+  /* 46 bands */
 .boxtop {
     /*background-color: orange;*/
     height: 30%;
     width: 100%;
-    border-bottom: 5px solid black;
+    border-bottom: 15px solid black;
 }
 
+.top_band {
+    height: 100%;
+    width: calc(100%/46);
+}
+
+.purple {
+    background-color: purple;
+}
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue; 
+}
 .boxbottom {
     height: 560px;
     width: 800px;
@@ -24,7 +54,7 @@
     /*background-color: green;*/
     height: 100%;
     width: 50%;
-    border-right: 5px solid black;
+    border-right: 15px solid black;
 }
 
 .boxright {
