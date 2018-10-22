@@ -17,6 +17,5 @@ console.log(message);
 messageWrapper.innerText = message;
 
 
-/*console.log('Hello, ' + name + ' ! ');*/
-/*console.log('Hiii, ' + age + ' ! ');*/
+
 
