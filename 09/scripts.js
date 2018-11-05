@@ -44,16 +44,14 @@
         document.body.appendChild(triangle);
 
       } else if (keyCodePressed === 69) {
-        // e key for circle
-        let circle = document.createElement('div');
+        // shift key for triangle
+        const circle = document.createElement('div');
         circle.className = 'circle';
         // circle.style.left = coordinates.x + 'px;'; // same as next
         circle.style.left = `${coordinates.x}px`; // string notation
         circle.style.top = `${coordinates.y}px`;
         circle.style.backgroundColor = helpers.generateRandomColorString();
-        document.body.appendChild(triangle);
-     
-
+        document.body.appendChild(circle);    
 
         
       } else if (keyCodePressed === 67) {
@@ -69,11 +67,16 @@
         dog.style.transform = `-webkit-rotate(${degreesRotation}deg)`;
         dog.style.transform = `rotate(${degreesRotation}deg)`;
         document.body.appendChild(dog);
+      }
+
+
   
-      } else if (keyCodePressed === 65) {
+      else if (keyCodePressed === 65) {
         // a for animated
         helpers.removeClass('animated');
         document.body.classList.add('animated');
+      
+    
   
       } else if (keyCodePressed === 80) {
         const degreesRotation = Math.floor(Math.random() * 360);
