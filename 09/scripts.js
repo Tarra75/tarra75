@@ -44,11 +44,11 @@
         document.body.appendChild(triangle);
 
       } else if (keyCodePressed === 69) {
-        // shift key for triangle
+        // e key for triangle
         const circle = document.createElement('div');
-        circle.className = 'circle';
-        // circle.style.left = coordinates.x + 'px;'; // same as next
-        circle.style.left = `${coordinates.x}px`; // string notation
+        circle.className = 'circle bounce infinite animated';
+        //circle.style.left = coordinates.x + 'px;'; // same as next
+        circle.style.right = `${coordinates.x}px`; // string notation
         circle.style.top = `${coordinates.y}px`;
         circle.style.backgroundColor = helpers.generateRandomColorString();
         document.body.appendChild(circle);    
