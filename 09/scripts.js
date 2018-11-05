@@ -48,7 +48,7 @@
         const circle = document.createElement('div');
         circle.className = 'circle bounce infinite animated';
         //circle.style.left = coordinates.x + 'px;'; // same as next
-        circle.style.right = `${coordinates.x}px`; // string notation
+        circle.style.left = `${coordinates.x}px`; // string notation
         circle.style.top = `${coordinates.y}px`;
         circle.style.backgroundColor = helpers.generateRandomColorString();
         document.body.appendChild(circle);    
