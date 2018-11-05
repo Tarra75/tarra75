@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">');
+
+html, body {
+  color: #fff;
+  font-family: 'Mali', sans-serif;
+  font-size: 60px;
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  background: #000;
+}
+
+img {
+   height: auto;
+   max-width: 100%;
+}
+
+#message {
+  position: relative;
+}
+
+
+.cat {
+  height: auto;
+  max-width: 268px;
+  position: absolute;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 300px solid;
+    color: powderblue;
+    position: absolute;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%
+}
+
+
+.phrase {
+  font-family: 'Architects Daughter', cursive;
+  position: absolute;
+}
+
+.animated {
+  -webkit-animation: colorchange 3s infinite;
+  animation: colorchange 3s infinite;
+}
+
+
+
+@keyframes colorchange
+{
+  0%   {background: darkred;}
+  25%  {background: rgb(226, 20, 20);}
+  50%  {background: rgb(209, 69, 69);}
+  75%  {background: rgb(197, 115, 128);}
+  100% {background: lightpink;}
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background: darkred;}
+  25%  {background: rgb(226, 20, 20);}
+  50%  {background: rgb(209, 69, 69);}
+  75%  {background: rgb(197, 115, 128);}
+  100% {background: lightpink;}
+}
+
+
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
