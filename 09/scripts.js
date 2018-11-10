@@ -49,7 +49,7 @@
 
         const degreesRotation = Math.floor(Math.random() * 360);
 
-        // c key for image
+        // c key for pacman image
         const dog = document.createElement('img');
         dog.className = 'dog';
         dog.src = `images/pacman.png`;
@@ -63,7 +63,7 @@
 
       const degreesRotation = Math.floor(Math.random() * 360);
 
-      // a key for image
+      // a key for ghost image
       const ghost = document.createElement('img');
       ghost.className = 'ghost';
       ghost.src = `images/ghost.png`;
@@ -78,7 +78,7 @@
       } else if (keyCodePressed === 80) {
         const degreesRotation = Math.floor(Math.random() * 360);
   
-        // p for prompt phrase
+        // p for pacman phrase
         const phrase = document.createElement('h3');
         phrase.className = 'phrase';
         phrase.style.left = `${coordinates.x}px`;
@@ -99,13 +99,7 @@
     }
   
     const getPhrase = function () {
-      const exclamations = ['✮ pacmans ✮ '];
-      const index = Math.floor(Math.random() * exclamations.length);
-      return exclamations[index];
-    }
-  
-    const getPhrase2 = function () {
-      const exclamations = ['☯'];
+      const exclamations = ['✮ pacman ✮ '];
       const index = Math.floor(Math.random() * exclamations.length);
       return exclamations[index];
     }
