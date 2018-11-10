@@ -31,27 +31,18 @@
       if (keyCodePressed === 13) {
         // Figure out how to append a div with a
         // message into the coordinateWrapper
+        // press space bar or enter to change background color
         document.body.style.backgroundColor = helpers.generateRandomColorString();
      
     } else if (keyCodePressed === 16) {
-        // shift key for triangle
-        const triangle = document.createElement('div');
-        triangle.className = 'triangle';
-        // circle.style.left = coordinates.x + 'px;'; // same as next
-        triangle.style.left = `${coordinates.x}px`; // string notation
-        triangle.style.top = `${coordinates.y}px`;
-        triangle.style.backgroundColor = helpers.generateRandomColorString();
-        document.body.appendChild(triangle);
-
-      } else if (keyCodePressed === 69) {
-        // e key for triangle
+        // shift key for bouncing circles
         const circle = document.createElement('div');
         circle.className = 'circle bounce infinite animated';
-        //circle.style.left = coordinates.x + 'px;'; // same as next
+        // circle.style.left = coordinates.x + 'px;'; // same as next
         circle.style.left = `${coordinates.x}px`; // string notation
         circle.style.top = `${coordinates.y}px`;
         circle.style.backgroundColor = helpers.generateRandomColorString();
-        document.body.appendChild(circle);    
+        document.body.appendChild(circle);
 
         
       } else if (keyCodePressed === 67) {
@@ -61,21 +52,27 @@
         // c key for image
         const dog = document.createElement('img');
         dog.className = 'dog';
-        dog.src = `images/cat.jpg`;
+        dog.src = `images/pacman.png`;
         dog.style.left = `${coordinates.x}px`;
         dog.style.top = `${coordinates.y}px`;
         dog.style.transform = `-webkit-rotate(${degreesRotation}deg)`;
         dog.style.transform = `rotate(${degreesRotation}deg)`;
         document.body.appendChild(dog);
       }
+     else if (keyCodePressed === 65) {
 
+      const degreesRotation = Math.floor(Math.random() * 360);
 
-  
-      else if (keyCodePressed === 65) {
-        // a for animated
-        helpers.removeClass('animated');
-        document.body.classList.add('animated');
-      
+      // a key for image
+      const ghost = document.createElement('img');
+      ghost.className = 'ghost';
+      ghost.src = `images/ghost.png`;
+      ghost.style.left = `${coordinates.x}px`;
+      ghost.style.top = `${coordinates.y}px`;
+      ghost.style.transform = `-webkit-rotate(${degreesRotation}deg)`;
+      ghost.style.transform = `rotate(${degreesRotation}deg)`;
+      document.body.appendChild(ghost);
+
     
   
       } else if (keyCodePressed === 80) {
@@ -102,7 +99,7 @@
     }
   
     const getPhrase = function () {
-      const exclamations = ['✮ Hello ✮ '];
+      const exclamations = ['✮ pacmans ✮ '];
       const index = Math.floor(Math.random() * exclamations.length);
       return exclamations[index];
     }
