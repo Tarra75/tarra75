@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    color: black;
+    font-size: 16px;
+    background: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+section{
+    align-items: center;
+    display: flex;
+   height: 100vh;
+   justify-content: center;
+   flex-direction: column; 
+}
+
+#section-2 {
+    background: lightcoral;
+    color: black;
+    transition: background-color 5s ease-in-out;
+}
+#section-3 p {
+    max-width: 500px;
+    margin: 0 auto;
+    letter-spacing: .1 em;
+    opacity: .1;
+}
+
+#section-1 {
+    background: lightseagreen;
+}
+
+#section-3{
+    background: violet;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
