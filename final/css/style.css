@@ -66,7 +66,21 @@ section {
 #section-3 {
     opacity: 0;
     transition: opacity 9s ease;
-    height: 100vh;
+    height: 40vh;
+    position: relative;
+    float: center;
+}
+
+.center {
+    max-width: 700px;
+    margin: 0 auto;
+    letter-spacing: .1 em;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    float: center;
+    margin: auto;
     position: relative;
 }
 
@@ -117,6 +131,7 @@ section {
     position: absolute;
 }
 
+
 #section-2fff p {
     max-width: 700px;
     margin: 0 auto;
@@ -166,6 +181,7 @@ section {
 
 
 .container {
+    margin-left: 350px;
     position: relative;
     width: 50%;
     padding: 0px;
@@ -174,7 +190,7 @@ section {
 
 
   
-  .image2 {
+  .cell {
     display: block;
     width: 100%;
     height: auto;
@@ -184,37 +200,39 @@ section {
     max-height: 2000px;
     max-width: 2000px;
     padding: 0px;
-
   }
   
+  
+
   .overlay {
     position: absolute;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
     background-color: black;
     overflow: hidden;
     width: 100%;
-    height:0;
-    transition: .5s ease;
+    height: 100%;
+    transform: scale(0);
+    transition: 1s ease;
   }
   
   .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
+    transform: scale(1);
   }
   
+
   .text {
     color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
   }
+ 
+  
 
   img {
     height: auto;
