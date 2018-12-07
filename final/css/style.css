@@ -3,7 +3,7 @@ html, body {
     color: white;
     font-size: 20px;
     background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Text Me One', sans-serif;
 }
 
 section {
@@ -14,9 +14,10 @@ section {
    flex-direction: column; 
 }
 
+
 #section-2 {
-    opacity: 0;
-    transition: opacity 5s ease;
+   opacity: 0;
+   transition: opacity 5s ease;
    width: 100%;
    position: relative;
    height: 100vh;
@@ -42,7 +43,7 @@ section {
     opacity: 0;
     transition: opacity 5s ease;
    width: 100%;
-   height: 100vh;
+   height: 80vh;
    position: relative;
 }
 
@@ -65,11 +66,15 @@ section {
 #section-3 {
     opacity: 0;
     transition: opacity 9s ease;
+    height: 100vh;
+    position: relative;
 }
 
 #section-3.active {
     opacity: 1;
 }
+
+
 
 
 
@@ -163,7 +168,11 @@ section {
 .container {
     position: relative;
     width: 50%;
+    padding: 0px;
+    height: auto;
   }
+
+
   
   .image2 {
     display: block;
@@ -205,4 +214,112 @@ section {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: 45em) {
+
+    section p {
+      font-size: 35px;
+      max-width: 50vw;
+    }
+  
+  }
+  
+  section.active p {
+    opacity: 1;
+  }
+  
+
+  #section-4 {
+    width: 100%;
+    position: relative;
+    height: 140vh;
+ }
+
+
+  /* ul */
+  .gallery {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .gallery li {
+    float: left;
+    line-height: 0;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .gallerycon {
+    float: left;
+    line-height: 0;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .gallerycon2 {
+    float: left;
+    line-height: 0;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+
+  
+  @media (min-width: 45em) {
+    .gallery li {
+      width: 20%;
+      align-content: center;
+    }
+  }
+  
+  .gallery img {
+    height: auto;
+    max-width: 270px;
+    padding: 0px;
+  }
+  
+  .gallery .caption {
+    align-items: center;
+    background: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    height: 0;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: auto;
+    text-align: left;
+    text-decoration: none;
+    top: 0;
+    transition: all .5s ease-in-out;
+    letter-spacing: .1 em;
+    font-size: 15px;
+  }
+  
+  .gallery li:hover .caption {
+    height: 100%;
+    opacity: 1;
   }
