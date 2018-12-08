@@ -2,8 +2,8 @@ html, body {
     height: 100%;
     color: white;
     font-size: 20px;
-    background-color: black;
     font-family: 'Text Me One', sans-serif;
+    background-color: black;
 }
 
 section {
@@ -51,6 +51,7 @@ section {
     opacity: 1;
 }
 
+
 #section-2fff {
     opacity: 0;
     transition: opacity 5s ease;
@@ -84,12 +85,28 @@ section {
     position: relative;
 }
 
+.glow {
+    font-size: 30px;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkblue, 0 
+      0 40px blue, 0 0 50px lightblue, 0 0 60px  0 0 70px white;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px darkgoldenrod, 0 0 40px darkorange, 
+      0 0 50px lightcoral, 0 0 60px orange, 0 0 70px orangered, 0 0 80px peachpuff;
+    }
+  }
+
 #section-3.active {
     opacity: 1;
 }
-
-
-
 
 
 #section-2 p {
@@ -214,7 +231,7 @@ section {
     width: 100%;
     height: 100%;
     transform: scale(0);
-    transition: 1s ease;
+    transition: .8s ease;
   }
   
   .container:hover .overlay {
@@ -232,7 +249,6 @@ section {
     text-align: center;
   }
  
-  
 
   img {
     height: auto;
@@ -340,4 +356,38 @@ section {
   .gallery li:hover .caption {
     height: 100%;
     opacity: 1;
+  }
+
+  
+  /* Add some padding and a grey background color to containers */
+  .containerm {
+    padding: 20px;
+    background-color: #2090a2 ;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: lightsalmon;
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
   }
