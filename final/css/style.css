@@ -358,14 +358,12 @@ section {
     opacity: 1;
   }
 
-  
-  /* Add some padding and a grey background color to containers */
+
   .containerm {
     padding: 20px;
     background-color: #2090a2 ;
   }
-  
-  /* Style the input elements and the submit button */
+
   input[type=text], input[type=submit] {
     width: 100%;
     padding: 12px;
@@ -375,12 +373,51 @@ section {
     box-sizing: border-box;
   }
   
-  /* Add margins to the checkbox */
+
+  #section-5 {
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    margin-bottom: 80px;
+    list-style: none;
+ }
+ #wrap {
+    width:1000px;
+    margin:0 auto;
+    background: black;
+    }
+
+.header {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+        #main {
+            float:left;
+            width:480px;
+            background: black;
+            }
+
+            #sidecolumn {
+            float:right;
+            width:480px;
+            background: black;
+            }
+ #wrap:hover {
+      color:  lightsalmon;
+      background :black;
+            }
+            
+
   input[type=checkbox] {
     margin-top: 16px;
   }
   
-  /* Style the submit button */
+
   input[type=submit] {
     background-color: lightsalmon;
     color: white;
